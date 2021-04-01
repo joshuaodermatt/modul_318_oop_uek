@@ -12,7 +12,6 @@
             <Button fx:id="buttonConnectionsPage" mnemonicParsing="false" onAction="#onButtonConnectionsPageClicked" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px; -fx-border-color: #707070;" text="Connections" textFill="#707070" />
             <Button fx:id="buttonStationBoard" mnemonicParsing="false" onAction="#onButtonStationStationBoardClicked" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px; -fx-border-color: #707070;" text="Station Board" textFill="#707070" />
             <Button fx:id="buttonStationSearch" mnemonicParsing="false" onAction="#onButtonStationSearchClicked" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px; -fx-border-color: #707070;" text="Station Search" textFill="#707070" />
-            <Button fx:id="buttonStationsMap" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 0px 0px; -fx-border-color: #707070;" text="Stations Map" textFill="#707070" />
          </children>
       </VBox>
    </left>

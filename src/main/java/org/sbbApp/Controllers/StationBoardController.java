@@ -94,20 +94,21 @@ public class StationBoardController {
         Transport transport = new Transport();
         String inputStation = textFieldStation.getText();
         StationBoardRoot stationBoardRoot = null;
+        ObservableList<StationBoardTableViewObject> mappedStationBoards = null;
 
         if (!inputStation.equals("")) {
             try {
                 Stations stations = transport.getStations(inputStation);
                 stationBoardRoot = transport.getStationBoard(inputStation, stations.stationList.get(0).Id);
+                mappedStationBoards = mapStationBoardRoot(stationBoardRoot);
             } catch (Exception exception) {
                 labelStationSearch.setText("No station found");
                 exception.printStackTrace();
             }
         } else {
-            System.out.println("label rot sagt nein");
+            labelStationSearch.setText("No station given");
         }
 
-        ObservableList<StationBoardTableViewObject> mappedStationBoards = mapStationBoardRoot(stationBoardRoot);
 
         tableViewConnections.setItems(mappedStationBoards);
 
